@@ -1,0 +1,4 @@
+USE THE FOLLOWING TO SPOOF MAC ADDRESS W/O THIRD PARTY SOFTWARE
+
+Set-NetAdapterAdvancedProperty "Wi-Fi" -RegistryKeyword "NetworkAddress" -RegistryDataType REG_SZ
+Set-NetAdapterAdvancedProperty -Name "Wi-Fi" -RegistryKeyword "NetworkAddress" -RegistryValue "<12 digit alphanumeric value>"
